@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: staging
+    schema: staging
+    tables:
+      - name: who_covid_raw
+        columns:
+          - name: date_reported
+            tests: [not_null]
+          - name: country_code
+            tests: [not_null]

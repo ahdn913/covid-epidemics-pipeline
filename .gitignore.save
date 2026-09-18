@@ -1,0 +1,9 @@
+pycache__/
+*.py[cod]
+.env
+venv/
+logs/
+target/
+*.pkl
+*.h5
+*.csv

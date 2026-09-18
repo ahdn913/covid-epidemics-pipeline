@@ -1,0 +1,13 @@
+name: 'covid_epidemics'
+version: '1.0.0'
+config-version: 2
+profile: 'covid_epidemics'
+model-paths: ["."]
+target-path: "target"
+models:
+  covid_epidemics:
+    staging: { +schema: staging, +materialized: view }
+    intermediate: { +schema: intermediate, +materialized: table }
+    marts:
+      core: { +schema: marts_core, +materialized: table }
+      epidemiology: { +schema: marts_epidemiology, +materialized: table }

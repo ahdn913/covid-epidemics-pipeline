@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment
+.env
+
+# Data
+data/raw/
+data/processed/
+*.csv
+*.h5
+*.hdf5
+!sample_data/*.csv
+
+# ML models
+ml/models/
+*.pkl
+*.h5
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+postgres_data/
+minio_data/__pycache__/
+*.py[cod]
+.env
+venv/
+logs/
+target/
+*.pkl
+*.h5
+*.csv
